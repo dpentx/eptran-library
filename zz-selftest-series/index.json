@@ -1,0 +1,13 @@
+{
+  "seri": "zz-selftest-series",
+  "ad": "zz-selftest-series",
+  "ciltler": [
+    {
+      "slug": "zz-selftest",
+      "baslik": "Selftest",
+      "yazar": "Test",
+      "bolum_sayisi": 2,
+      "epub": "https://github.com/dpentx/eptran-library/releases/download/zz-selftest/zz-selftest_tr.epub"
+    }
+  ]
+}
