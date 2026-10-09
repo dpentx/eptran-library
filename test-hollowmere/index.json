@@ -1,0 +1,13 @@
+{
+  "seri": "test-hollowmere",
+  "ad": "test-hollowmere",
+  "ciltler": [
+    {
+      "slug": "test-hollowmere",
+      "baslik": "The Lighthouse at Hollowmere (Test)",
+      "yazar": "Claude",
+      "bolum_sayisi": 2,
+      "epub": "https://github.com/dpentx/eptran-library/releases/download/test-hollowmere/test-hollowmere_tr.epub"
+    }
+  ]
+}
