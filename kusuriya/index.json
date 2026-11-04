@@ -1,0 +1,13 @@
+{
+  "seri": "kusuriya",
+  "ad": "Kusuriya no Hitorigoto (Zehir Ustası / The Apothecary Diaries)",
+  "ciltler": [
+    {
+      "slug": "knh-1",
+      "baslik": "The Apothecary Diaries: Volume 01",
+      "yazar": "Natsu Hyuuga",
+      "bolum_sayisi": 34,
+      "epub": "https://github.com/dpentx/eptran-library/releases/download/knh-1/knh-1_tr.epub"
+    }
+  ]
+}
