@@ -1,0 +1,13 @@
+{
+  "seri": "kusuriya",
+  "ad": "Kusuriya no Hitorigoto (Zehir Ustası / The Apothecary Diaries)",
+  "ciltler": [
+    {
+      "slug": "knh-3",
+      "baslik": "The Apothecary Diaries: Volume 03",
+      "yazar": "Natsu Hyuuga",
+      "bolum_sayisi": 23,
+      "epub": "https://github.com/dpentx/eptran-library/releases/download/knh-3/knh-3_tr.epub"
+    }
+  ]
+}
