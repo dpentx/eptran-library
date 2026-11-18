@@ -1,14 +1,14 @@
 {
-  "status": "running",
+  "status": "completed",
   "book": "libtest",
   "epub_file": "libtest.epub",
   "branch": "book/libtest",
   "source_type": "epub",
   "total": 1,
   "completed": 1,
-  "current_chapter": "Chapter 1: The Lighthouse Keeper",
+  "current_chapter": "",
   "started_at": "2026-11-18T12:00:00+00:00",
   "queue_mode": true,
-  "updated_at": "2026-11-18T15:32:41.435248+00:00",
+  "updated_at": "2026-11-18T15:32:45.153392+00:00",
   "library_series": "libtest"
 }
