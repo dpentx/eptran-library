@@ -9,9 +9,10 @@
   "current_chapter": "",
   "started_at": "2026-11-18T12:00:00+00:00",
   "queue_mode": true,
-  "updated_at": "2026-11-19T06:13:04.940441+00:00",
+  "updated_at": "2026-11-19T06:13:09.386426+00:00",
   "library_series": "libtest",
   "review_status": "running",
   "review_total": 1,
-  "review_completed": 0
+  "review_completed": 1,
+  "review_current": "001_libtest.txt"
 }
