@@ -1,0 +1,13 @@
+{
+  "seri": "libtest",
+  "ad": "libtest",
+  "ciltler": [
+    {
+      "slug": "libtest",
+      "baslik": "libtest",
+      "yazar": null,
+      "bolum_sayisi": 1,
+      "epub": "https://github.com/dpentx/eptran-library/releases/download/libtest/libtest_tr.epub"
+    }
+  ]
+}
