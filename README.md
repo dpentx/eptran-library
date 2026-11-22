@@ -35,26 +35,37 @@ burada saklanmaz.
 
 ## Bölüm dosyası biçimi
 
-Bölüm dosyaları pipeline'ın çalışma biçiminde tutulur, yani çeviri bittiğinde
-yazılan haliyle:
+Bölüm dosyalarının iki biçimi vardır; hangisini gördüğünüz dala bağlıdır.
+
+**`main` (yayın biçimi)** — okuyucu sitesinin ve düzeltme PR'larının gördüğü:
+
+```
+<başlık, ör. "Bölüm 1: ...">
+
+<paragraf>
+
+<paragraf>
+```
+
+İlk satır başlıktır, boş satırdan sonra paragraflar gelir (paragraflar boş
+satırla ayrılır). Başlık satırında `#` ya da İngilizce başlık yoktur.
+
+**`staging/*` (çalışma biçimi)** — pipeline'ın yazdığı, çeviri sürerken:
 
 ```
 # <orijinal bölüm başlığı>
 
-<çevrilmiş başlık satırı, ör. "Bölüm 1: ...">
-
-<paragraf>
+<çevrilmiş başlık satırı>
 
 <paragraf>
 ```
 
-- İlk satır `# ` ile başlayan orijinal başlıktır; okuyucuya gösterilen başlık
-  değildir.
-- Gösterilecek başlığı ve gövdeyi ayırma kuralları eptran'daki
-  `load_txt_chapters` (`scripts/convert.py`) ile aynı olmalıdır. Bu dosyaları
-  okuyan her araç (okuyucu sitesi dahil) aynı kuralı uygular, biçimi kendi
-  başına yorumlamaz.
-- Paragraflar boş satırla ayrılır.
+İlk satır `# ` ile başlayan orijinal başlıktır. Kitap `main`'e alınırken
+(promote) pipeline bu biçimi yayın biçimine çevirir; dönüşüm tekrar
+uygulandığında değişmez. Kural eptran'daki `scripts/lib/chapter_format.py`
+dosyasındadır (`convert.py`'deki `load_txt_chapters` ile aynı sonucu verir,
+testle korunur). Bu dosyaları okuyan araçlar başlık/gövde ayırmasını kendi
+başına yorumlamaz.
 
 ## index.json
 
@@ -80,5 +91,5 @@ yazılan haliyle:
 
 - Süren çeviriye dokunulmaz: `staging/*` dallarına sadece pipeline yazar.
 - Yayımlanmış kitaplarda düzeltme, `main`'e açılan PR'larla yapılır (okuyucu
-  önerileri bu yoldan gelecek). Bölüm dosyasının biçimini (yukarıda) bozmamaya
-  dikkat edin.
+  önerileri bu yoldan gelecek). Yayın biçimini (ilk satır başlık, sonra
+  gerisi) bozmamaya dikkat edin; dosya adı ve numarasını değiştirmeyin.
